@@ -40,5 +40,5 @@ http://localhost:3000
 
 
 
-Then push README update:
+
 
