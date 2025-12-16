@@ -23,3 +23,22 @@ Backend-focused Leave Management System where:
 ```bash
 cd server
 npm install
+
+
+
+## Setup (Frontend)
+
+```bash
+cd client
+npm install
+npm start
+
+Frontend runs at:
+
+http://localhost:3000
+
+
+
+
+Then push README update:
+
