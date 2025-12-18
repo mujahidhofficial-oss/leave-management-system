@@ -38,6 +38,21 @@ Frontend runs at:
 http://localhost:3000
 
 
+quick test credentials
+
+Employee:
+
+employee@gamage.com
+
+Employee@123
+
+Admin:
+
+admin@gamage.com
+
+Admin@123
+
+
 
 
 
