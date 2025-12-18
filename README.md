@@ -13,8 +13,8 @@ Backend-focused Leave Management System where:
 - Frontend: React (minimal)
 
 ## Project Structure
-/server
-/client
+/server(backend)
+/client(frontend)
 
 
 ## Setup (Backend)

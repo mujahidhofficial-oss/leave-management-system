@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import { allLeavesAPI, updateLeaveStatusAPI } from "../services/api";
 
-// 🔹 CHANGED: added onLogout prop
+
 export default function AdminDashboard({ token, onLogout }) {
   const [leaves, setLeaves] = useState([]);
 
-  // 🔹 NO CHANGE: load all leave requests
+  
   const loadLeaves = async () => {
     const res = await allLeavesAPI(token);
     setLeaves(res.leaves || []);
   };
 
-  // 🔹 NO CHANGE: load leaves on page load
+  
   useEffect(() => {
     loadLeaves();
   }, []);
 
-  // 🔹 CHANGED: handle approve / reject with reload
+  //  approve / reject with reload
   const updateStatus = async (id, status) => {
     await updateLeaveStatusAPI(id, status, token);
     loadLeaves(); // refresh list after action

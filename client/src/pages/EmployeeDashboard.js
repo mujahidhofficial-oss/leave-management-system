@@ -30,7 +30,7 @@ export default function EmployeeDashboard({ token, onLogout }) {
 
     await createLeaveAPI(form, token);
 
-    // 🔹 CHANGED: reset form after success
+    //  reset form after success
     setForm({ startDate: "", endDate: "", reason: "" });
 
     loadLeaves();
